@@ -28,7 +28,7 @@
             "label": "Web VNC"
         }
     },
-    "updateContentCommand": "Meta/serenity.sh rebuild-toolchain",
+    "updateContentCommand": "Meta/serenity.sh rebuild-toolchain; Meta/serenity.sh build",
     // Use 'postCreateCommand' to run commands after the container is created.
     "postCreateCommand": "pre-commit install; pre-commit install --hook-type commit-msg"
 
